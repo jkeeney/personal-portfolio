@@ -1,0 +1,106 @@
+@font-face {
+	font-family: LeagueSpartan;
+	src: url('LeagueSpartan-Bold.otf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+#navbar {
+	display: flex;
+	align-items: center;
+	background-color: green;
+	width: 100%;
+	height: 5rem;
+	justify-content: flex-end;
+	position: fixed;
+	overflow: hidden;
+}
+
+#nav-list {
+	display: flex;
+	gap: 2rem;
+	margin-right: 2rem;
+	list-style: none;
+}
+
+#nav-list a {
+	display: block;
+	font-family: Arial;
+	font-size: 2.2rem;
+	padding: 2rem;
+}
+
+#nav-list a:hover {
+	background-color: darkslateblue;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#welcome-section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-family: LeagueSpartan;
+	font-size: 3rem;
+	font-color: white;
+	background-color: darkslategrey;
+}
+
+#welcome-section > p {
+	font-family: Arial;
+	font-size: 3rem;
+	font-style: italic;
+	color: darkred;
+}
+
+#projects {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-family: LeagueSpartan;
+	font-size: 3rem;
+	font-color: white;
+	background-color: darkseagreen;
+}
+
+#contact {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-family: LeagueSpartan;
+	font-size: 3rem;
+	font-color: white;
+	background-color: darkslateblue;
+}
+
+@media (max-width: 700px) {
+	font-size: 55%;
+}
